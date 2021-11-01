@@ -46,9 +46,9 @@ class Account:
 #### Question 2b
 We have recieved a request to create a new class DevAccount inheriting from the Account class for testing and development purposes. This new class contains the additional functions:
 
-> Get Balance
-> Set Balance
-> Transfer to other account
+- Get Balance
+- Set Balance
+- Transfer to other account
 
 Please implement the afformentioned class and their functions
 
