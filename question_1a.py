@@ -1,5 +1,7 @@
 
-""" This is unoptimized and coupled solution
+""" Question 1a
+
+    This is unoptimized and coupled solution
 
     Using python built-in module date and calendar
 
