@@ -1,5 +1,10 @@
-"""
-Question 1b
+""" Question 1b
+
+    using factorial to return factorial of 100
+
+    convert to string
+
+    sum each conversion back
 
 """
 def factorial(n):
