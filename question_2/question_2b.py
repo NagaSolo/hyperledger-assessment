@@ -4,7 +4,7 @@
     - Class Account from question 2a
     - Create child class DevAccount inheriting from parent class Account
     - Set balance properties to 0 upon instantiation
-    - Add method set_balance() and get_balance() to child class
+    - Add method set_balance() and get_balance() and transfer_fund() to child class
     - Manual testing DevAccount class
 
 """
