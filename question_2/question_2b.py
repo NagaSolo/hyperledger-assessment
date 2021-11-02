@@ -9,6 +9,7 @@
 
 """
 
+from collections import namedtuple
 import uuid
 
 # class Account from question 2a
@@ -43,15 +44,33 @@ class DevAccount(Account):
     def get_balance(self):
         return f"Current balance is: {self.balance}"
 
+    def transfer_fund(self, amount, recipient):
+        if not isinstance(recipient, DevAccount):
+            return "Recipient does not exists !"
+        elif amount > self.balance:
+            return f"Balance is less than transfer funds"
+        else:
+            self.balance -= amount
+            recipient.balance += amount
+            return f"Current balance is: {self.balance}"
+
 if __name__ == '__main__':
     
-    # instantiate a dev account
-    account_dev = DevAccount('Bojan')
-    print(account_dev)
+    print('\ninstantiate a dev account:')
+    account_bojan = DevAccount('Bojan')
+    print(account_bojan)
 
-    # manual testing setting balance
-    account_dev.set_balance(50)
-    print(account_dev)
+    print('\nmanual testing setting balance:')
+    account_bojan.set_balance(50)
+    print(account_bojan)
 
-    # manual testing getting balance
-    print(account_dev.get_balance())
+    print('\nmanual testing getting balance:')
+    print(account_bojan.get_balance())
+
+    print('\ninstantiate another dev account:')
+    account_boyski = DevAccount('Boyski')
+    print(account_boyski)
+
+    print('\nmanual testing transfer from one account to another:')
+    print(account_bojan.transfer_fund(10, account_boyski))
+    print(account_boyski)
