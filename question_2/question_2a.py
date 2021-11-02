@@ -3,7 +3,8 @@
 
     - Added unique id using uuid4
     - Added logic to method deposit() and withdraw()
-    - instantiate
+    - Instantiate 3 instances
+    - Store instances with namedtuple
 
 """
 
